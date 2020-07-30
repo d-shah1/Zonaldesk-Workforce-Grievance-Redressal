@@ -1,0 +1,33 @@
+<li class="nav-item dropdown user-menu">
+  <a
+    class="nav-link dropdown-toggle"
+    data-toggle="dropdown"
+    (click)="toggleDropdownMenu()"
+  >
+    <img
+      src="assets/img/user.jpg"
+      class="user-image img-circle elevation-2"
+      alt="User Image"
+    />
+  </a>
+  <ul #dropdownMenu class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+    <!-- User image -->
+    <li class="user-header bg-primary">
+      <img src="assets/img/user.jpg" class="img-circle elevation-2" alt="User Image" />
+
+      <p>
+        User Name - Admin/Employee
+        <small>Member since Nov. 2012</small>
+      </p>
+    </li>
+
+    <li class="user-footer">
+      <a [routerLink]="['/profile']" class="btn btn-default btn-flat">
+        Profile
+      </a>
+      <a (click)="logout()" class="btn btn-default btn-flat float-right"
+        >Sign out</a
+      >
+    </li>
+  </ul>
+</li>
