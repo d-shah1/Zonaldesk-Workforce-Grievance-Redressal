@@ -25,6 +25,7 @@ import { UserDropdownMenuComponent } from './pages/main/header/user-dropdown-men
 import { ComplaintsMoreinfoComponent } from './views/dashboard/complaints-moreinfo/complaints-moreinfo.component';
 
 registerLocaleData(localeEn, 'en-EN');
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ registerLocaleData(localeEn, 'en-EN');
     AppButtonComponent,
     UserDropdownMenuComponent,
     ComplaintsMoreinfoComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
